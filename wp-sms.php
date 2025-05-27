@@ -48,6 +48,11 @@ require_once WP_SMS_DIR . 'includes/class-wpsms-gateway.php';
 require WP_SMS_DIR . 'includes/class-wpsms.php';
 
 /**
+ *  Filters SMS messages
+ */
+include_once __DIR__ . 'wp-sms-content-filter.php';
+
+/**
  * @return WP_SMS
  */
 function WPSms()
